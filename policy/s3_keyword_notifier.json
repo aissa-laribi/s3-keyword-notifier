@@ -1,0 +1,71 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "ses:*"
+            ],
+            "Resource": [
+                "arn:aws:ses:*:<account_number>:identity/*",
+                "arn:aws:s3:::<bucket_name>/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ses:CreateReceiptRule",
+                "ses:DeleteReceiptFilter",
+                "ses:VerifyEmailIdentity",
+                "ses:CreateReceiptFilter",
+                "ses:CreateConfigurationSetTrackingOptions",
+                "ses:ListReceiptFilters",
+                "ses:UpdateAccountSendingEnabled",
+                "ses:DeleteConfigurationSetEventDestination",
+                "ses:UpdateTemplate",
+                "ses:DescribeReceiptRuleSet",
+                "ses:ListReceiptRuleSets",
+                "ses:DeleteConfigurationSetTrackingOptions",
+                "ses:GetTemplate",
+                "ses:UpdateConfigurationSetTrackingOptions",
+                "ses:CreateConfigurationSet",
+                "ses:DeleteReceiptRuleSet",
+                "ses:CreateTemplate",
+                "ses:ReorderReceiptRuleSet",
+                "ses:DescribeReceiptRule",
+                "ses:CreateReceiptRuleSet",
+                "ses:CreateConfigurationSetEventDestination",
+                "ses:ListVerifiedEmailAddresses",
+                "ses:UpdateConfigurationSetEventDestination",
+                "ses:ListTemplates",
+                "ses:ListCustomVerificationEmailTemplates",
+                "ses:DeleteCustomVerificationEmailTemplate",
+                "ses:TestRenderTemplate",
+                "ses:GetSendQuota",
+                "ses:DescribeConfigurationSet",
+                "ses:DeleteConfigurationSet",
+                "ses:DeleteReceiptRule",
+                "ses:VerifyDomainIdentity",
+                "ses:CloneReceiptRuleSet",
+                "ses:ListConfigurationSets",
+                "ses:ListIdentities",
+                "ses:PutConfigurationSetDeliveryOptions",
+                "ses:VerifyEmailAddress",
+                "ses:UpdateReceiptRule",
+                "ses:UpdateConfigurationSetReputationMetricsEnabled",
+                "ses:GetCustomVerificationEmailTemplate",
+                "ses:GetSendStatistics",
+                "ses:UpdateConfigurationSetSendingEnabled",
+                "ses:ListIdentityPolicies",
+                "ses:SetActiveReceiptRuleSet",
+                "ses:DescribeActiveReceiptRuleSet",
+                "ses:GetAccountSendingEnabled",
+                "ses:UpdateCustomVerificationEmailTemplate",
+                "ses:DeleteTemplate",
+                "ses:SetReceiptRulePosition"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
